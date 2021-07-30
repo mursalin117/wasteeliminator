@@ -1,0 +1,52 @@
+
+.form {
+    margin-top: 6rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    justify-content: space-between;
+}
+
+.form div {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.form div div {
+    display: flex;
+}
+.form div div input {
+    display: block;
+    width: 50%;
+    font: inherit;
+    padding: 0.2rem;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    margin-right: 12px;
+}
+.form div label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.form div input {
+    display: block;
+    width: 100%;
+    font: inherit;
+    padding: 0.2rem;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+.form div select {
+    display: block;
+    width: 100%;
+    font: inherit;
+    padding: 0.2rem;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    margin-left: 40%;
+}

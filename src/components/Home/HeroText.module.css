@@ -1,0 +1,30 @@
+.herotext {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: -7.2rem;
+    position: relative;
+    border-radius: 14px;
+    color:rgb(25, 90, 110);
+    padding: 1rem;
+    box-shadow: 0 1px 6px 3px rgba(0, 0, 0, 0.25);
+
+}
+
+.herotext h1 {
+    font-size: 4rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px #091b7c;
+}
+.herotext p {
+    margin-top: 0;
+    font-size: 1.2rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    letter-spacing: 0.2rem;
+}
+

@@ -1,0 +1,42 @@
+.home {
+  justify-content: center;
+  margin: 20px auto;
+  align-items: center;
+  text-align: center;
+}
+
+
+.vision {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.vision div {
+    margin-left: 15%;
+    text-align: end;
+}
+.vision img {
+    border-radius: 10px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.profile div img {
+    border-radius: 100px;
+    
+}
+
+.h1 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
