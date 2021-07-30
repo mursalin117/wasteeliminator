@@ -7,7 +7,6 @@ import useToken from "./components/Hooks/useToken";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import AboutUs from "./components/Pages/AboutUs";
-import FAQ from './components/Pages/FAQ';
 import Alert from "./components/Alert/Alert";
 
 
@@ -47,12 +46,6 @@ function App() {
           {token && (
             <Route path="/about">
               <AboutUs />
-            </Route>
-          )}
-
-          {token && (
-            <Route path="/faq">
-              <FAQ />
             </Route>
           )}
 

@@ -7,7 +7,6 @@ const AddPost = (props) => {
   const wasteTypeRef = useRef();
   const latRef = useRef();
   const longRef = useRef();
-  // const imgRef = useRef();
 
   const [file, setFile] = useState(null);
 
@@ -29,13 +28,9 @@ const AddPost = (props) => {
       }
     };
     const data = new FormData();
-    // data.append("wasteType", enteredWasteType);
-    // data.append("lat", enteredLat);
-    // data.append("long", enteredLong);
     data.append("image", file);
     data.append("data", JSON.stringify(metaData));
 
-    // data.append("data", metaData);
 
     
     props.onConfirm(data);

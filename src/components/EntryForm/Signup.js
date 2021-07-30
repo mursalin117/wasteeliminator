@@ -128,6 +128,7 @@ const Signup = (props) => {
       passwordRef.current.focus();
     }
 
+    props.onClose();
   };
 
   return (

@@ -4,16 +4,24 @@ import classes from './FAQ.module.css';
 
 const items = [
   {
-    title: "what is React? How it works? Why it works? When it Works? Why me? Why Always me?",
-    content: "React is a front end javascript framework",
+    title: "What is Waste Eliminator?",
+    content: "Waste Eliminator is simple web application where anyone can make an alert of uncontrolled waste by uploading image and location.",
   },
   {
-    title: "why use React?",
-    content: "React is a favorite JS library among engineers",
+    title: "How Waste Eliminator works?",
+    content: "Waste Eliminator adds a marker on the map when an user posts an alert. According these data uploaded by users, Waste Eliminator will create clusters on the map based on density of alert in a certain area.",
   },
   {
-    title: "How do you use React?",
-    content: "You use React by creating components",
+    title: "Why I need to create an account to post an alert?",
+    content: "User might post a fake alert. So we need to verify them.",
+  },
+  {
+    title: "Is there any business opportunity?",
+    content: "Waste collectors organization can parternship with us and get benefitted with our data.",
+  },
+  {
+    title: "Is this a non profit organization?",
+    content: "Yes. This is a non profitable organization.",
   },
 ];
 

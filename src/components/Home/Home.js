@@ -7,6 +7,8 @@ import Card from "../UI/Card/Card";
 import vision from "../../photos/7.jpg";
 import profile from "../../photos/4.jpg";
 import Button from "../UI/Button/Button";
+import faqImage from '../../photos/faq.png';
+import Faq from "../Pages/FAQ";
 const Home = (props) => {
 
   const submitUserHandler = async (payload) => {
@@ -102,6 +104,14 @@ const Home = (props) => {
       {signupScreen}
       {loginScreen}
       {Vision}
+      <Card>
+        <h1>Add an alert</h1>
+        <Button>Post Now</Button>
+      </Card>
+      <Card className={classes.faq}>
+        <img src={faqImage} height="250px" width="450px" alt="faq"/>
+        <Faq />
+      </Card>
       <h1 className={classes.h1}>Who We are?</h1>
       {whoWeAre}
     </div>

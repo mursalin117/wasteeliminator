@@ -4,7 +4,8 @@ import Post from "../Post/Post";
 import AddPost from "../Post/AddPost";
 import PostCard from "../UI/Card/PostCard";
 import logo192 from "../../photos/6.jpg";
-import axios from "axios";
+
+
 const DUMMY_DATA = [
   {
     id: 1,
@@ -50,8 +51,11 @@ const DUMMY_DATA = [
   },
 ];
 
+const flag = true;
+
 const Alert = ({ token }) => {
-  const [posts, setPosts] = useState(DUMMY_DATA);
+  const [posts, setPosts] = useState();
+  const [updatedData, setUpdatedData] = useState(flag);
   const [location, setLocation] = useState({ lat: 0, long: 0 });
   const [geoError, setGeoError] = useState("");
 
@@ -66,11 +70,17 @@ const Alert = ({ token }) => {
     );
   }, []);
 
+  useEffect(() => {
+    const url = "https://waste-eliminator-api.us-south.cf.appdomain.cloud/datas"
+
+    fetch(url)
+      .then(res => res.json())
+      .then(data => {
+        setPosts(data.datas);
+      });
+  }, [updatedData]);
+
   const submitPostHandler = async (payload) => {
-    console.log("sending...");
-    for (var pair of payload.entries()) {
-      console.log(pair[0]+ ', ' + pair[1]); 
-  }
     try {
       const response = await fetch(
         "https://waste-eliminator-api.us-south.cf.appdomain.cloud/datas",
@@ -85,32 +95,13 @@ const Alert = ({ token }) => {
 
       const data = await response.json();
       console.log(data);
+      setUpdatedData(!flag);
     } catch (err) {
       console.log(err);
     }
   };
 
-  //  const submitPostHandler = async (payload) => {
-  //   console.log("sending...");
-  //   for (var pair of payload.entries()) {
-  //     console.log(pair[0]+ ', ' + pair[1]); 
-  // }
-  // //   const headers = { 
-  // //     'Authorization': `Bearer ${token}`
-  // // };
-
-  //   try {
-  //     await axios.post("https://waste-alert-api.herokuapp.com/datas", payload, {
-  //       headers: {
-  //         "Content-Type": "multipart/form-data",
-  //         'Authorization': `Bearer ${token}`,
-  //       }
-  //     })
-  //   }catch(err){
-  //     console.log(err)
-  //   }
-  // };
-
+ 
   return (
     <Fragment>
       <Map style="post" height="100%" width="68%" />
@@ -122,14 +113,14 @@ const Alert = ({ token }) => {
         />
       </PostCard>
 
-      {posts.map((post) => (
+      {posts && posts.slice(0).reverse().map((post) => (
         <PostCard>
-          <ul key={post.id}>
+          <ul key={post._id}>
             <Post
-              id={post.id}
-              key={post.id}
-              lat={post.lat}
-              long={post.long}
+              id={post._id}
+              key={post._id}
+              lat={post.location.lat}
+              long={post.location.long}
               wasteType={post.wasteType}
               image={post.image}
             />
