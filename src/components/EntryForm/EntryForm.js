@@ -3,7 +3,6 @@ import Login from "./Login";
 import Signup from "./Signup";
 const EntryForm = (props) => {
   const submitUserHandler = async (payload) => {
-    console.log(JSON.stringify(payload));
     const response = await fetch(
       "https://waste-eliminator-api.us-south.cf.appdomain.cloud/users",
       {

@@ -9,10 +9,7 @@ const AddPost = (props) => {
   const longRef = useRef();
 
   const [file, setFile] = useState(null);
-
-  console.log('Testing');
-
-  
+ 
   const SubmitHandler = (event) => {
     event.preventDefault();
 
@@ -37,8 +34,6 @@ const AddPost = (props) => {
   };
 
   const fileHandler = (event) => {
-    console.log('sldfjsldkfj');
-    console.log(event.target.files);
     setFile(event.target.files[0]);
   };
 

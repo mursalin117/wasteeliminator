@@ -65,12 +65,10 @@ const ContactForm = (props) => {
 
   useEffect(() => {
     const identifier = setTimeout(() => {
-      console.log("Checking form validity");
       setFormIsValid(nameIsValid && emailIsValid && messageIsValid);
     }, 500);
 
     return () => {
-      console.log("CLEANUP");
       clearTimeout(identifier);
     };
   }, [nameIsValid, emailIsValid, messageIsValid]);
@@ -162,7 +160,7 @@ const ContactForm = (props) => {
             onBlur={validateMessageHandler}
           />
         </div>
-        <Button type="submit">Send</Button>
+        <Button type="submit">Send Message</Button>
       </form>
   );
 };

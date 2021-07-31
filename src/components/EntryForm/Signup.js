@@ -66,12 +66,10 @@ const Signup = (props) => {
 
   useEffect(() => {
     const identifier = setTimeout(() => {
-      console.log("Checking form validity");
       setFormIsValid(nameIsValid && emailIsValid && passwordIsValid);
     }, 500);
 
     return () => {
-      console.log("CLEANUP");
       clearTimeout(identifier);
     };
   }, [nameIsValid, emailIsValid, passwordIsValid]);

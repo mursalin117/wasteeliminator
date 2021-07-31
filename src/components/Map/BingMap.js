@@ -1,13 +1,10 @@
 import { ReactBingmaps } from "react-bingmaps";
 
 const API_KEY =
-  "AuMc_zo05L4emt4GXR_MOdNp4gqmCJgXm8nnnR4cAEdb7xaDzNO6CTPj5eJnzNMt";
+  "Add you r api key";
 
 // Creating a map and adding a pin after API has been loaded
 function BingMap() {
-    const callBackMethod = () => {
-        console.log('What is this?')
-    }
   return (
     <div className={classes.header}>
       <ReactBingmaps

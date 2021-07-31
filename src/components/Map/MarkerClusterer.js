@@ -15,7 +15,7 @@ const {
 const MapWithAMarkerClusterer = compose(
   withProps({
     googleMapURL:
-      "https://maps.googleapis.com/maps/api/js?key=AddYourAPIKey&v=3.exp&libraries=geometry,drawing,places",
+      "https://maps.googleapis.com/maps/api/js?key=AddYourAPI&v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
     mapElement: <div style={{ height: `90%` }} />,
   }),

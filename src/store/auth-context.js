@@ -23,7 +23,6 @@ export const AuthContextProvider = (props) => {
     }
 
     const loginHandler = (email, password) => {
-        console.log(email, password);
         localStorage.setItem("isLoggedIn", "1");
         setIsLoggedIn(true);
     };

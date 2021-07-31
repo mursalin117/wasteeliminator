@@ -35,7 +35,7 @@ const Alert = ({ token }) => {
 
   const submitPostHandler = async (payload) => {
     try {
-      const response = await fetch(
+      await fetch(
         "https://waste-eliminator-api.us-south.cf.appdomain.cloud/datas",
         {
           method: "POST",
@@ -45,12 +45,8 @@ const Alert = ({ token }) => {
           },
         }
       );
-
-      const data = await response.json();
-      console.log(data);
       setUpdatedData(!flag);
     } catch (err) {
-      console.log(err);
     }
   };
 
