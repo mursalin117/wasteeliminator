@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/wasteeliminator/static/css/main.d7ed29d8.chunk.css",
-    "main.js": "/wasteeliminator/static/js/main.c36d2338.chunk.js",
-    "main.js.map": "/wasteeliminator/static/js/main.c36d2338.chunk.js.map",
+    "main.js": "/wasteeliminator/static/js/main.10f97ebd.chunk.js",
+    "main.js.map": "/wasteeliminator/static/js/main.10f97ebd.chunk.js.map",
     "runtime-main.js": "/wasteeliminator/static/js/runtime-main.76e47e0b.js",
     "runtime-main.js.map": "/wasteeliminator/static/js/runtime-main.76e47e0b.js.map",
-    "static/js/2.0f5de90a.chunk.js": "/wasteeliminator/static/js/2.0f5de90a.chunk.js",
-    "static/js/2.0f5de90a.chunk.js.map": "/wasteeliminator/static/js/2.0f5de90a.chunk.js.map",
+    "static/js/2.c605816a.chunk.js": "/wasteeliminator/static/js/2.c605816a.chunk.js",
+    "static/js/2.c605816a.chunk.js.map": "/wasteeliminator/static/js/2.c605816a.chunk.js.map",
     "index.html": "/wasteeliminator/index.html",
     "static/css/main.d7ed29d8.chunk.css.map": "/wasteeliminator/static/css/main.d7ed29d8.chunk.css.map",
-    "static/js/2.0f5de90a.chunk.js.LICENSE.txt": "/wasteeliminator/static/js/2.0f5de90a.chunk.js.LICENSE.txt",
+    "static/js/2.c605816a.chunk.js.LICENSE.txt": "/wasteeliminator/static/js/2.c605816a.chunk.js.LICENSE.txt",
     "static/media/7.63ae873f.jpg": "/wasteeliminator/static/media/7.63ae873f.jpg",
     "static/media/ProfilePic.e307dcfb.jpg": "/wasteeliminator/static/media/ProfilePic.e307dcfb.jpg",
     "static/media/faq.864be299.png": "/wasteeliminator/static/media/faq.864be299.png",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.76e47e0b.js",
-    "static/js/2.0f5de90a.chunk.js",
+    "static/js/2.c605816a.chunk.js",
     "static/css/main.d7ed29d8.chunk.css",
-    "static/js/main.c36d2338.chunk.js"
+    "static/js/main.10f97ebd.chunk.js"
   ]
 }
