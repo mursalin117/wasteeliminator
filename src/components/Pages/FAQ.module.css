@@ -1,3 +1,7 @@
 .body {
     font-size: 18;
+    display: block;
+    text-align: start;
+
 }
+

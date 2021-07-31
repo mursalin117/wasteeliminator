@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/wasteeliminator/static/css/main.6ef74740.chunk.css",
+    "main.js": "/wasteeliminator/static/js/main.4fae6aca.chunk.js",
+    "main.js.map": "/wasteeliminator/static/js/main.4fae6aca.chunk.js.map",
+    "runtime-main.js": "/wasteeliminator/static/js/runtime-main.76e47e0b.js",
+    "runtime-main.js.map": "/wasteeliminator/static/js/runtime-main.76e47e0b.js.map",
+    "static/js/2.6c531302.chunk.js": "/wasteeliminator/static/js/2.6c531302.chunk.js",
+    "static/js/2.6c531302.chunk.js.map": "/wasteeliminator/static/js/2.6c531302.chunk.js.map",
+    "index.html": "/wasteeliminator/index.html",
+    "static/css/main.6ef74740.chunk.css.map": "/wasteeliminator/static/css/main.6ef74740.chunk.css.map",
+    "static/js/2.6c531302.chunk.js.LICENSE.txt": "/wasteeliminator/static/js/2.6c531302.chunk.js.LICENSE.txt",
+    "static/media/7.63ae873f.jpg": "/wasteeliminator/static/media/7.63ae873f.jpg",
+    "static/media/ProfilePic.e307dcfb.jpg": "/wasteeliminator/static/media/ProfilePic.e307dcfb.jpg",
+    "static/media/faq.864be299.png": "/wasteeliminator/static/media/faq.864be299.png",
+    "static/media/mursalin.64a3b589.jpg": "/wasteeliminator/static/media/mursalin.64a3b589.jpg",
+    "static/media/shahriar.e61ada51.jpg": "/wasteeliminator/static/media/shahriar.e61ada51.jpg",
+    "static/media/waste.a3e4e153.jpg": "/wasteeliminator/static/media/waste.a3e4e153.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.76e47e0b.js",
+    "static/js/2.6c531302.chunk.js",
+    "static/css/main.6ef74740.chunk.css",
+    "static/js/main.4fae6aca.chunk.js"
+  ]
+}

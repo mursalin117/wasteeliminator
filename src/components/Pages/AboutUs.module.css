@@ -1,0 +1,31 @@
+.about {
+    margin-top: 6rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    justify-content: space-between;
+}
+
+.about h1 {
+    text-align: center;
+    justify-content: center;
+}
+.profile {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.profilediv img{
+    border-radius: 100px;
+    
+}
+
+.a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255)
+}

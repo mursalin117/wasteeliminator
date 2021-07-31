@@ -11,28 +11,21 @@
     justify-content: space-between;
     margin-left: 5%;
     margin-right: 5%;
+    font-size: 18px;
+    color: rgb(73, 72, 72);
 }
 .vision div {
-    margin-left: 15%;
-    text-align: end;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
 }
 .vision img {
     border-radius: 10px;
 }
 
-.profile {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.profile div img {
-    border-radius: 100px;
-    
-}
 
 .h1 {
     text-align: center;
@@ -47,4 +40,37 @@
     display: flex;
     justify-content: space-between;
     text-align: end;
+}
+.contact {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.addAlert {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 18px;
+    color: rgb(73, 72, 72);
+}
+.addAlert div {
+    margin-top: 5%;
+    margin-right: 20%;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+}
+.addAlert img {
+    border-radius: 10px;
+}
+
+.add {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.button {
+    padding-top: 2 rem;
+    padding-bottom: 2 rem;
 }

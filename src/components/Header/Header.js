@@ -4,7 +4,7 @@ import EntryButton from "./EntryButton";
 const Header = (props) => {
   return (
     <header className={classes.header}>
-      <h1>Waste Eliminator</h1>
+      <a style={{color: "white"}} href="/"><h1>Waste Eliminator</h1></a>
       <EntryButton
         token={props.token}
         setToken={props.setToken}

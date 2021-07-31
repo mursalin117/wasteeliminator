@@ -12,19 +12,19 @@ const EntryButton = (props) => {
     return (
         <nav className={classes.nav}>
           <ul>
-          {props.token && (
+          {(
               <li>
-                <a href="/about">About Us</a>
+                <a href="/wasteeliminator/about">About Us</a>
+              </li>
+            )}
+            {(
+              <li>
+                <a href="/wasteeliminator/alert">Alert</a>
               </li>
             )}
             {props.token && (
               <li>
-                <a href="/alert">Alert</a>
-              </li>
-            )}
-            {props.token && (
-              <li>
-                <a href="/home">Home</a>
+                <a href="/wasteeliminator/home">Home</a>
               </li>
             )}
             {props.token && (
@@ -39,7 +39,7 @@ const EntryButton = (props) => {
             )}
             {!props.token && (
               <li>
-                  <Button onClick={props.onLogin}>Login</Button> 
+                  <button onClick={props.onLogin}>Login</button> 
               </li>
             )}
           </ul>

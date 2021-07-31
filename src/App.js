@@ -8,6 +8,7 @@ import useToken from "./components/Hooks/useToken";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import AboutUs from "./components/Pages/AboutUs";
 import Alert from "./components/Alert/Alert";
+import EntryForm from "./components/EntryForm/EntryForm";
 
 
 function App() {
@@ -40,49 +41,36 @@ function App() {
         onShowLogin={showLoginHandler}
         onShowSignup={showSignupHandler}
       />
-
+      <EntryForm
+        setToken={setToken}
+        showLoginHandler={showLoginHandler}
+        showSignupHandler={showSignupHandler}
+        hideEntryFormHandler={hideEntryFormHandler}
+        loginIsShown={loginIsShown}
+        signupIsShown={signupIsShown}
+      />
       <BrowserRouter>
         <Switch>
-          {token && (
-            <Route path="/about">
+          {(
+            <Route path="/wasteeliminator/about">
               <AboutUs />
             </Route>
           )}
 
-          {token && (
-            <Route path="/alert">
+          {(
+            <Route path="/wasteeliminator/alert">
                 <Alert token={token} />
             </Route>
           )}
 
-          <Route path="/">
-            <Home
-              setToken={setToken}
-              showLoginHandler={showLoginHandler}
-              showSignupHandler={showSignupHandler}
-              hideEntryFormHandler={hideEntryFormHandler}
-              loginIsShown={loginIsShown}
-              signupIsShown={signupIsShown}
-            />
+          <Route path="/wasteeliminator">
+            <Home/>
           </Route>
         </Switch>
       </BrowserRouter>
 
       {false && (
         <Fragment>
-          {/* {signupIsShown && (
-            <Signup
-              onShowLogin={showLoginHandler}
-              onClose={hideEntryFormHandler}
-            />
-          )}
-
-          {!ctx.isLoggedIn && loginIsShown && (
-            <Login
-              onShowSignup={showSignupHandler}
-              onClose={hideEntryFormHandler}
-            />
-          )} */}
         </Fragment>
       )}
     </Fragment>

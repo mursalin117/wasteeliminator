@@ -2,6 +2,7 @@
   "name": "wasteeliminator",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mamuncseru.github.io/wasteeliminator",
   "dependencies": {
     "@react-google-maps/api": "^2.2.0",
     "@testing-library/jest-dom": "^5.14.1",
@@ -10,6 +11,7 @@
     "axios": "^0.21.1",
     "bing-maps-loader": "^1.0.7",
     "bingmaps": "^2.0.3",
+    "gh-pages": "^3.2.3",
     "google-maps-react": "^2.0.6",
     "react": "^16.14.0",
     "react-bingmaps": "^3.6.1",
@@ -20,6 +22,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

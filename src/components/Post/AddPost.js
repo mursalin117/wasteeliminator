@@ -47,10 +47,11 @@ const AddPost = (props) => {
       <div>
         <label htmlFor="wastes">Choose Waste Type</label>
         <select type="text" id="wastes" name="wastes" ref={wasteTypeRef}>
-          <option value="Toxic">Toxic</option>
-          <option value="Municipal">Municipal</option>
+          <option value="Organic">Organic</option>
+          <option value="Hazardous">Hazardous</option>
           <option value="Liquid">Liquid</option>
-          <option value="Electronics">Electronics</option>
+          <option value="Recyclable">Recyclable</option>
+          <option value="Solid">Solid</option>
         </select>
       </div>
       <div>

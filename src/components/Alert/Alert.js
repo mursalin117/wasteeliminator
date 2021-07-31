@@ -3,53 +3,6 @@ import Map from "../Map/Map";
 import Post from "../Post/Post";
 import AddPost from "../Post/AddPost";
 import PostCard from "../UI/Card/PostCard";
-import logo192 from "../../photos/6.jpg";
-
-
-const DUMMY_DATA = [
-  {
-    id: 1,
-    wasteType: "Municipal",
-    lat: 0,
-    long: 1,
-    image: logo192,
-  },
-  {
-    id: 6,
-    wasteType: "Toxic",
-    lat: 0,
-    long: 1,
-    image: logo192,
-  },
-  {
-    id: 2,
-    wasteType: "Liquid",
-    lat: 0,
-    long: 1,
-    image: logo192,
-  },
-  {
-    id: 3,
-    wasteType: "Toxic",
-    lat: 0,
-    long: 1,
-    image: logo192,
-  },
-  {
-    id: 4,
-    wasteType: "Municipal",
-    lat: 0,
-    long: 1,
-    image: logo192,
-  },
-  {
-    id: 5,
-    wasteType: "Electronics",
-    lat: 0,
-    long: 1,
-    image: logo192,
-  },
-];
 
 const flag = true;
 
@@ -104,16 +57,25 @@ const Alert = ({ token }) => {
  
   return (
     <Fragment>
-      <Map style="post" height="100%" width="68%" />
+      <Map updatedData={updatedData} style="post" height="100%" width="68%" />
       <PostCard>
-        <AddPost
+        {token && (
+          <AddPost
           onConfirm={submitPostHandler}
           location={location}
           geoError={geoError}
         />
+        )}
+        {!token && (
+          <div>
+            <h2 style={{ marginTop: '6rem'}}>You must login to make an alert.</h2>
+          </div>
+        )
+
+        }
       </PostCard>
 
-      {posts && posts.slice(0).reverse().map((post) => (
+      {posts && posts.slice(posts.length-5, posts.length).reverse().map((post) => (
         <PostCard>
           <ul key={post._id}>
             <Post
