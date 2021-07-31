@@ -7,6 +7,7 @@ import Button from "../UI/Button/Button";
 import faqImage from "../../photos/faq.png";
 import addAlert from "../../photos/waste.jpg";
 import Faq from "../Pages/FAQ";
+import { Link } from 'react-router-dom';
 import ContactForm from "../Pages/ContactForm";
 const Home = (props) => {
 
@@ -42,7 +43,7 @@ const Home = (props) => {
         <div>
           <h1>Add an alert</h1>
           <p>Add photo and location of waste around you.</p>
-          <Button className={classes.button}><span className={classes.add}>+  Post Now</span></Button>
+          <Link to="/alert"><Button className={classes.button}><span className={classes.add}>+  Post Now</span></Button></Link>
         </div>
       </Card>
       <Card className={classes.faq}>

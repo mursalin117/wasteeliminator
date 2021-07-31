@@ -10,7 +10,7 @@ const HeroText = (props) => {
     <div className={classes.herotext}>
       <h1>Waste Eliminator</h1>
       <p>{subtext}</p>
-      <Link to={"/wasteeliminator/alert"}>
+      <Link to={"/alert"}>
         <Button> Getting Start </Button>
       </Link>
 

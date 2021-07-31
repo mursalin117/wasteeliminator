@@ -1,10 +1,12 @@
 import classes from "./Header.module.css";
 import EntryButton from "./EntryButton";
+import { Link } from "react-router-dom";
 
 const Header = (props) => {
   return (
     <header className={classes.header}>
-      <a style={{color: "white"}} href="/"><h1>Waste Eliminator</h1></a>
+      <Link to="/home"><h1>Waste Eliminator</h1></Link>
+
       <EntryButton
         token={props.token}
         setToken={props.setToken}

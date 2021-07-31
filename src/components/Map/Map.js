@@ -3,7 +3,7 @@ import MarkerClusterer from './MarkerClusterer';
 
 const Map = (props) => {
   let styles = classes.map;
-  if (props.style === "post"){
+  if (props.styling === "post"){
     styles = classes.header;
   }
     return (

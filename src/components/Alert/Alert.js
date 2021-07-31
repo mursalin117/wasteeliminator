@@ -57,7 +57,7 @@ const Alert = ({ token }) => {
  
   return (
     <Fragment>
-      <Map updatedData={updatedData} style="post" height="100%" width="68%" />
+      <Map updatedData={updatedData} styling="post" height="100%" width="68%" />
       <PostCard>
         {token && (
           <AddPost

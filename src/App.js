@@ -10,14 +10,11 @@ import AboutUs from "./components/Pages/AboutUs";
 import Alert from "./components/Alert/Alert";
 import EntryForm from "./components/EntryForm/EntryForm";
 
-
 function App() {
   const [loginIsShown, setLoginIsShown] = useState(false);
   const [signupIsShown, setSignupIsShown] = useState(false);
 
-
   const { token, setToken } = useToken();
-
 
   const showLoginHandler = () => {
     setLoginIsShown(true);
@@ -31,48 +28,43 @@ function App() {
     setSignupIsShown(true);
   };
 
-
-
   return (
     <Fragment>
-      <Header
-        token={token}
-        setToken={setToken}
-        onShowLogin={showLoginHandler}
-        onShowSignup={showSignupHandler}
-      />
-      <EntryForm
-        setToken={setToken}
-        showLoginHandler={showLoginHandler}
-        showSignupHandler={showSignupHandler}
-        hideEntryFormHandler={hideEntryFormHandler}
-        loginIsShown={loginIsShown}
-        signupIsShown={signupIsShown}
-      />
       <BrowserRouter>
+        <Header
+          token={token}
+          setToken={setToken}
+          onShowLogin={showLoginHandler}
+          onShowSignup={showSignupHandler}
+        />
+        <EntryForm
+          setToken={setToken}
+          showLoginHandler={showLoginHandler}
+          showSignupHandler={showSignupHandler}
+          hideEntryFormHandler={hideEntryFormHandler}
+          loginIsShown={loginIsShown}
+          signupIsShown={signupIsShown}
+        />
         <Switch>
-          {(
-            <Route path="/wasteeliminator/about">
+          {
+            <Route path="/about">
               <AboutUs />
             </Route>
-          )}
+          }
 
-          {(
-            <Route path="/wasteeliminator/alert">
-                <Alert token={token} />
+          {
+            <Route path="/alert" component={Alert}>
+              <Alert token={token} />
             </Route>
-          )}
+          }
 
-          <Route path="/wasteeliminator">
-            <Home/>
+          <Route path="/">
+            <Home />
           </Route>
         </Switch>
       </BrowserRouter>
 
-      {false && (
-        <Fragment>
-        </Fragment>
-      )}
+      {false && <Fragment></Fragment>}
     </Fragment>
   );
 }

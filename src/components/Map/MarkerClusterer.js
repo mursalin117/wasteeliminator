@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import locdata from './mockLocation.json';
+// import locdata from './mockLocation.json';
 const fetch = require("isomorphic-fetch");
 const { compose, withProps, withHandlers } = require("recompose");
 const {
@@ -15,7 +15,7 @@ const {
 const MapWithAMarkerClusterer = compose(
   withProps({
     googleMapURL:
-      "https://maps.googleapis.com/maps/api/js?key=AIzaSyBZibHlhg2TX5MQuzQzr7h3cPTtZhfo7MY&v=3.exp&libraries=geometry,drawing,places",
+      "https://maps.googleapis.com/maps/api/js?key=AddYourAPIKey&v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
     mapElement: <div style={{ height: `90%` }} />,
   }),
@@ -47,7 +47,7 @@ const MapWithAMarkerClusterer = compose(
 ));
 
 // Mock Location Data for better clustering....
-const arr = locdata.map((item) => ({lat: parseFloat(item.latitude), long: parseFloat(item.longitude)}));
+// const arr = locdata.map((item) => ({lat: parseFloat(item.latitude), long: parseFloat(item.longitude)}));
 
 const Markerclusterer = (props) => {
  

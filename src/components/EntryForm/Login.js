@@ -1,4 +1,4 @@
-import { useRef, useContext, useReducer, useEffect, useState } from "react";
+import { useRef, useReducer, useEffect, useState } from "react";
 import Button from "../UI/Button/Button";
 import Modal from "../UI/Modal/Modal";
 import classes from "./Input.module.css";

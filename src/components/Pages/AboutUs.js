@@ -23,7 +23,7 @@ const AboutUs = () => {
         name="M.M Mursalin Chowdhury"
         status="Student, CSE, University of Rajshahi"
         photo={mmProfile}
-        link="https://www.linkedin.com/in/mamuncseru/"
+        link="https://www.linkedin.com/in/m-m-mursalin-chowdhury-5bb40b181/"
       />
     </Card>
   );
