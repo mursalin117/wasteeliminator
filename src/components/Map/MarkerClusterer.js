@@ -15,7 +15,7 @@ const {
 const MapWithAMarkerClusterer = compose(
   withProps({
     googleMapURL:
-      "https://maps.googleapis.com/maps/api/js?key=AddYourAPI&v=3.exp&libraries=geometry,drawing,places",
+      "https://maps.googleapis.com/maps/api/js?key=AIzaSyBZibHlhg2TX5MQuzQzr7h3cPTtZhfo7MY&v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
     mapElement: <div style={{ height: `90%` }} />,
   }),
@@ -34,7 +34,7 @@ const MapWithAMarkerClusterer = compose(
       onClick={props.onMarkerClustererClick}
       averageCenter
       enableRetinaIcons
-      gridSize={60}
+      gridSize={30}
     >
       {props.markers.map((marker) => (
         <Marker

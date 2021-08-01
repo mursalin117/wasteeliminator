@@ -1,0 +1,5 @@
+---
+applications:
+  - name: waste-eliminator-api
+    random-route: true
+    memory: 128M
