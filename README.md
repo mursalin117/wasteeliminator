@@ -59,8 +59,8 @@ The project roadmap is shown below -
 
 The front-end and back-end code is given below
 
-- [sample-react-app](./sample-react-app/)
-- [sample-angular-app](./sample-angular-app/)
+- [Waste Eliminator](./)
+- [back-end-api](./backend/)
 
 ## Built with
 
